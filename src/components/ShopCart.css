@@ -1,0 +1,136 @@
+.shopCartMainContainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin: 150px 175px 50px;
+	transition: all 0.2s ease;
+}
+
+.shopCartContainer {
+	width: 70%;
+}
+
+.shopCartPayment {
+	width: 27%;
+	background-color: #fff;
+	border: 1px solid silver;
+	border-radius: 5px;
+	text-align: left;
+}
+
+.shopCartPayment p {
+	color: rgb(61, 61, 61);;
+	margin: 20px 20px 10px;
+}
+
+.shopCartPayment p span {
+	color: #1a73e8;
+	font-weight: bold;
+}
+
+.shopCartButtonContainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	margin: 50px 20px 10px;
+}
+
+.shopCartCheckout {
+	display: inline-block;
+	background-color: #34a853;
+	padding: 7px 16px;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	transition: all 0.2s ease;
+	cursor: pointer;
+	box-shadow: rgba(0, 0, 0, 0.07) 0 1px 1px, rgba(0, 0, 0, 0.07) 0 2px 2px,
+	rgba(0, 0, 0, 0.07) 0 4px 4px, rgba(0, 0, 0, 0.07) 0 4px 8px,
+	rgba(0, 0, 0, 0.07) 0 9px 16px;
+}
+
+.shopCartCheckout:hover{
+	background-color: #167d32;
+}
+
+.shopCartClear {
+	cursor: pointer;
+	color: #34a853;
+	background: none;
+	border: none;
+	font-size: 1rem;
+	transition: all 0.2s ease;
+}
+
+.shopCartClear:hover{
+	color: #167d32;
+}
+
+.shopCartCompleted h3{
+	color: #167d32;
+	margin: 30px 0 50px;
+	font-size: 1.2rem;
+}
+
+.shopCartCompleted a {
+	background-color: #1a73e8;
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	width: 90px;
+	height: 30px;
+	font-weight: bold;
+	line-height: 30px;
+	border-radius: 4px;
+	text-align: center;
+	padding: 2px;
+	cursor: pointer;
+	margin-left: 5px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0 4px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
+	transition: all 0.2s ease;
+}
+
+.shopCartCompleted a:hover {
+	background-color: #08499d;
+}
+
+@media(max-width:1200px) 
+{
+	.shopCartMainContainer {
+		margin: 120px 80px 50px;
+	}
+}
+
+@media(max-width:1050px) 
+{
+	.shopCartMainContainer {
+		flex-direction: column-reverse;
+		align-items: center;
+		margin: 120px 80px 50px;
+	}
+
+	.shopCartContainer {
+		width: 100%;
+	}
+
+	.shopCartPayment {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}
+
+@media(max-width:768px) 
+{
+	.shopCartMainContainer {
+		margin: 120px 40px 50px;
+	}
+}
+
+@media(max-width:555px) 
+{
+	.shopCartMainContainer {
+		margin: 120px 20px 50px;
+	}
+}
