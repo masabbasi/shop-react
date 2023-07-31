@@ -28,7 +28,7 @@ const BuyButton = ({ productData }) => {
             dispatch({ type: "REMOVE_ITEM", payload: productData })
           }
         >
-          <img src={trashIcon} alt="" style={{ width: "20px" }} />
+          <img src={trashIcon} alt="" />
         </button>
       )}
       {quantityCount(state, productData.id) > 0 && (
