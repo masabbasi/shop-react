@@ -27,18 +27,6 @@
   font-weight: bold;
 }
 
-.cartQuantity {
-  background: orange;
-  width: 25px;
-  height: 25px;
-  display: inherit;
-  line-height: 25px;
-  border-radius: 3px;
-  color: #fff;
-  font-weight: bold;
-	text-align: center;
-}
-
 @media (max-width:470px) {
 .cartContainer {
 	flex-direction: column;
@@ -57,10 +45,6 @@
 
 .cartData p {
 		margin: 20px 0 30px;
-}
-
-.cartQuantity {
-	margin: 0 0 10px;
 }
 
 .cartButtonContainer {

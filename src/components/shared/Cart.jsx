@@ -17,9 +17,8 @@ const Cart = (props) => {
         <p>{price} $</p>
       </div>
       <div>
-        <span className="cartQuantity">{quantity}</span>
-      </div>
       <BuyButton productData={props.data} />
+      </div>
     </div>
   );
 };
