@@ -12,7 +12,6 @@ const ProductsContextProvider = ({children}) => {
 			setProducts(await getProducts());
 		};
     fetchAPI();
-		// getProducts().then(response=>{setProducts(response.data)})
   }, []);
 
   return (
