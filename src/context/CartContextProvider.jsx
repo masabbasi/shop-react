@@ -7,13 +7,6 @@ const initialState = {
   checkout: false,
 };
 
-const sumItems = items=>{
-	// const itemsCounter = items.reduce((total,product)=>total+product.quantity,0);
-	const itemsCounter = items.reduce((total,items)=>total+1,0);
-	const total = items.reduce((total,product)=>total+product.price*product.quantity,0).toFixed(2);
-	return {itemsCounter,total}
-}
-
 const cartReducer = (state, action) => {
   switch (action.type) {
     case "ADD_ITEM":
@@ -53,11 +46,19 @@ const cartReducer = (state, action) => {
   }
 };
 
+const sumItems = items=>{
+	const itemsCounter = items.reduce((total,items)=>total+1,0);
+	const total = items.reduce((total,product)=>total+product.price*product.quantity,0).toFixed(2);
+	return {itemsCounter,total}
+}
+
 export const CartContext = React.createContext();
 const CartContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(cartReducer, initialState);
 
-  return <CartContext.Provider value={{state,dispatch}}>{children}</CartContext.Provider>;
+  return <CartContext.Provider value={{state,dispatch}}>
+		{children}
+		</CartContext.Provider>;
 };
 
 export default CartContextProvider;
