@@ -5,7 +5,7 @@ import Cart from "./shared/Cart";
 //Context
 import { CartContext } from "../context/CartContextProvider";
 //Style
-import "./ShopCart.css"
+import "./ShopCart.css";
 
 const ShopCart = () => {
   const { state, dispatch } = useContext(CartContext);
@@ -28,8 +28,16 @@ const ShopCart = () => {
             {state.total} $
           </p>
           <div className="shopCartButtonContainer">
-            <button className="shopCartClear" onClick={() => dispatch({ type: "CLEAR" })}>Clear</button>
-            <button className="shopCartCheckout" onClick={() => dispatch({ type: "CHECKOUT" })}>
+            <button
+              className="shopCartClear"
+              onClick={() => dispatch({ type: "CLEAR" })}
+            >
+              Clear
+            </button>
+            <button
+              className="shopCartCheckout"
+              onClick={() => dispatch({ type: "CHECKOUT" })}
+            >
               Check Out
             </button>
           </div>

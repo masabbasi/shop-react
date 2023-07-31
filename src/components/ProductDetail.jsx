@@ -2,6 +2,8 @@ import React,{useContext} from 'react';
 import { Link,useParams } from 'react-router-dom';
 //Context
 import { ProductsContext } from '../context/ProductsContextProvider.jsx';
+//Components
+import BuyButton from './shared/BuyButton.jsx';
 //Style
 import "./ProductDetail.css"
 
@@ -21,6 +23,7 @@ const ProductDetail = (props) => {
 				<p className='detailCategory'><span>Category:</span> {category}</p>
 				<div className='detailButtonContainer'>
 					<span className='detailPrice'>{price} $</span>
+					<BuyButton productData={product}/>
 					<Link to="/shop-react/products">Back To Shop</Link>
 				</div>
 			</div>

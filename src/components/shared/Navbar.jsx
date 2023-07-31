@@ -1,9 +1,10 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+//Context
 import { CartContext } from "../../context/CartContextProvider";
 //Icons
 import shopIcon from "../../assets/icons/shop.svg";
-//CSS
+//Style
 import "./Navbar.css";
 
 const Navbar = () => {

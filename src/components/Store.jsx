@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
-//Component
-import Product from "./shared/Product.jsx";
 //Context
 import { ProductsContext } from "../context/ProductsContextProvider.jsx";
-//CSS
+//Components
+import Product from "./shared/Product.jsx";
+//Style
 import "./Store.css"
 
 const Store = () => {
