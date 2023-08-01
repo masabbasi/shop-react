@@ -9,6 +9,7 @@ import ShopCart from "./components/ShopCart";
 import ProductsContextProvider from "./context/ProductsContextProvider";
 import CartContextProvider from "./context/CartContextProvider";
 function App() {
+
   return (
     <ProductsContextProvider>
       <CartContextProvider>

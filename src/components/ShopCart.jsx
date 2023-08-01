@@ -21,7 +21,7 @@ const ShopCart = () => {
         <div className="shopCartPayment">
           <p>
             <span>Total Items: </span>
-            {state.itemsCounter}
+            {state.selectedItems.reduce((total,product)=>total+product.quantity,0)}
           </p>
           <p>
             <span>Total Payments: </span>
